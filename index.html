@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+  </head>
+  <body>
+     <!-- header -->
+     <header>
+    <nav>
+      <ul class="navigationstyle">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="employees.html">Employees</a></li>
+        <li><a href="tasks.html">Tasks</a></li>
+        <li><a href="charts.html" id="charts-link">Charts</a></li>
+      </ul>
+    </nav>
+  </header>
+    
+   
+
+  <h3 class="listUsers">List of users with most task finished in past month:</h3>
+
+    <section id="users"></section>
+
+    <div id="top-emp"></div>
+   
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+
+
+
+    <script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyC6HT0EALBmeKTLVZwl9jxxm6drqYJoRgw",
+        authDomain: "employee-6aea8.firebaseapp.com",
+        projectId: "employee-6aea8",
+        storageBucket: "employee-6aea8.appspot.com",
+        messagingSenderId: "813472148950",
+        appId: "1:813472148950:web:cc1af4e6c9f7666f980877",
+        measurementId: "G-N626NF9QM3",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+      
+    </script>
+    
+    <script src="topemployees.js"></script>
+  </body>
+</html>
